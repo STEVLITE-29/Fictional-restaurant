@@ -19,7 +19,7 @@ header {
 .brand > a {
     text-decoration: none;
     color: #0288D1;
-    font-family: noto serif;
+    font-family: playfair display;
 }
 
 .brand > a > span {
@@ -40,15 +40,75 @@ header {
 .my-nav li a {
     text-decoration: none;
     color: black;
-    font-family: playfair display;
+    font-family: noto serif;
     font-size: 16px;
     font-weight: 500;
 }
 
-.main-cont {
+.main-row {
     background-image: url(../res/hero-sec.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 700px;
+    height: calc(100vh - 60px);
+    color: #0288D1;
+    font-family: playfair display;
 }
+
+.min-row {
+    background-color: rgba(0, 0, 0, 0.8);
+    line-height: 24px;
+    border: 0.5px solid #FF6347;
+}
+
+.hero-text-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text-one p {
+    font-size: 35px;
+    font-weight: 200;
+}
+
+.hero-text-one h1 {
+    font-size: 70px;
+    font-weight: 500;
+    font-family: playfair display;
+}
+
+.hero-text-one h1 > span{
+    color: #FF6347;
+}
+
+.hero-text-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+}
+
+.hero-text-two p {
+    font-size: 18px;
+    font-weight: 200;
+    text-align: center;
+    line-height: 24px;
+}
+
+.m-btn {
+    border: 1px solid #0288D1;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.m-btn:hover {
+    border: none;
+    background-color: #FF6347;
+    color: black;
+    font-weight: 500;
+}
+
