@@ -1,0 +1,54 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    z-index: 1;
+    border-bottom: 1px solid #FF6347;
+}
+
+.brand {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.brand > a {
+    text-decoration: none;
+    color: #0288D1;
+    font-family: noto serif;
+}
+
+.brand > a > span {
+    color: #FF6347;
+}
+
+.my-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.my-nav li {
+    width: 100px;
+    list-style: none;
+
+}
+
+.my-nav li a {
+    text-decoration: none;
+    color: black;
+    font-family: playfair display;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.main-cont {
+    background-image: url(../res/hero-sec.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+}
