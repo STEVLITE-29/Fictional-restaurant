@@ -10,44 +10,98 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
-
-<body id="home" class="container-fluid">
-
-    <header class="row header-row sticky-top">
-        <div class="col-sm-2 col-lg-2 p-3 brand">
-            <a href="#home">Fik<span>shun</span></a>
-        </div>
-        <div class="col-sm p-3 my-nav">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </div>
+<body id="home">
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg my-nav">
+            <div class="container">
+              <a class="n-brand fs-3 fw-bold" href="#home">Fik<strong>shun</strong></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item mx-3">
+                    <a class="nav-a fs-7 fw-bold" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-a fs-7 fw-bold" href="#menu-section">Menu</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-a fs-7 fw-bold" href="#about-section">About us</a>
+                  </li>
+                  <li class="nav-item mx-3">
+                    <a class="nav-a fs-7 fw-bold" href="#contact-section">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main>
-        <section id="hero"  class="row hero-row justify-content-center align-items-center">
-            <div class="row h-row h-75 w-75">
-                <div class="row">
-                    <div class="hero-text-one">
-                        <p>Welcome to</p>
-                        <h1>Fik<span>shun</span></h1>
-                    </div>
+        <!-- Hero Section -->
+        <section id="hero-section">
+            <div class="container hero-cont">
+                <div class="row h-row h-100 justify-content-center">
+                    <h1>Welcome to<span><br>Fik<strong>shun</strong></span> </h1>
+                    <p class="fw-lighter">
+                        Experience exquisite flavors in an elegant setting, where each dish is a masterpiece <br>crafted from the finest ingredients.</br>
+                    </p>
+                    <div type="button" class="col-auto col-sm-4 col-md-3 m-btn">Make Reservation</div>
                 </div>
-                <div class="row">
-                    <div class="hero-text-two">
-                        <p class="hero">Experience exquisite flavors in an elegant setting, where each dish is a masterpiece <br>crafted from the finest ingredients.</br></p>
-                        <div type="button" class="m-btn">Make Reservation</div>
-                    </div>
-                </div>
-            </div>
-        </section>  
-        
-        <section id="menu" class="container-lg">
-            <div>
-
             </div>
         </section>
+
+        <!-- Menu Section -->
+        <section id="menu-section" class="py-5">
+            <div class="container menu-cont">
+              <div class="row text-center mb-4">
+                <h1 class="fw-light m-head">Our Menu</h1>
+                <p class="fw-lighter">Dishes you can look forward to</p>
+              </div>
+              <div class="row justify-content-around">
+                <!-- Card 1 -->
+                <div class="card col-md-3 col-12 mb-4 m-card">
+                  <img src="res/m-pizza.jpg" class="card-img-top" alt="Pizza">
+                  <div class="card-body">
+                    <h5 class="c-head">Margherita Pizza</h5>
+                    <p class="card-text">A classic pizza topped with fresh mozzarella, basil, and tomato sauce.</p>
+                    <p class="fw-bold">$14.99</p>
+                    <a href="#" class="c-btn">Order Now</a>
+                  </div>
+                </div>
+          
+                <!-- Card 2 -->
+                <div class="card col-md-3 col-12 mb-4 m-card">
+                  <img src="res/grilled-salmon.jpg" class="card-img-top" alt="Grilled Salmon">
+                  <div class="card-body">
+                    <h5 class="c-head">Grilled Salmon</h5>
+                    <p class="card-text">Perfectly grilled salmon served with a zesty lemon butter sauce.</p>
+                    <p class="fw-bold">$24.99</p>
+                    <a href="#" class="c-btn">Order Now</a>
+                  </div>
+                </div>
+          
+                <!-- Card 3 -->
+                <div class="card col-md-3 col-12 mb-4 m-card">
+                  <img src="res/steak.jpg" class="card-img-top" alt="Steak">
+                  <div class="card-body">
+                    <h5 class="c-head">Beef Steak</h5>
+                    <p class="card-text">A tender beef steak served with roasted vegetables and garlic butter.</p>
+                    <p class="fw-bold">$29.99</p>
+                    <a href="#" class="c-btn">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          
     </main>
+    
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
