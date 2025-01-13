@@ -2,31 +2,35 @@
     font-family: playfair display, Noto Serif;
 }
 
+body {
+    background-color: #000000;
+}
+
 header {
-    background-color: rgb(255, 255, 255);
-    border-bottom: 1px solid #0288D1;
+    background-color: #000000;
+    border-bottom: 1px solid #808080;
     position: sticky;
     z-index: 3;
     top: 0;
 }
 
 .n-brand {
-    color: #0288D1;
+    color: #ffffff;
     font-family: playfair display;
     text-decoration: none;
 }
 
 .n-brand strong {
-    color: #FF6347;
+    color: #DAA520;
 }
 
 .nav-a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
 }
 
 .nav-a:hover {
-    color: #FF6347;
+    color: #DAA520;
 }
 
 #hero-section {
@@ -37,7 +41,7 @@ header {
     background-position: center;
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: #000000;
 }
 
 .hero-cont {
@@ -49,7 +53,7 @@ header {
 .h-row {
     text-align: center;
     align-items: center;
-    color: #0288D1;
+    color: #ffffff;
     width: 70%;
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 8px;
@@ -66,12 +70,16 @@ header {
 }
 
 .h-row h1 span strong {
-    color: #FF6347;
+    color: #DAA520;
+}
+
+#menu-section {
+    background-color: #000000;
 }
 
 .m-btn {
     font-family: noto serif;
-    background-color: #0288D1;
+    background-color: #808080;
     padding: 8px;
     border-radius: 5px;
     font-size: 18px;
@@ -79,13 +87,13 @@ header {
 }
 
 .m-btn:hover {
-    background-color: #FF6347;
+    background-color: #DAA520;
     color: black;
     font-weight: 500;
 }
 
 .m-head {
-    color: #FF6347;
+    color: #DAA520;
 }
 
 .card-img-top {
@@ -95,8 +103,12 @@ header {
   
 .m-card {
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 4px 8px rgb(109, 109, 109);
     transition: box-shadow 0.3s ease;
+}
+
+.card-text {
+    color: #ffffff;
 }
 
 .m-card:hover {
@@ -105,15 +117,20 @@ header {
 
 .card-body {
     text-align: center;
+    background-color: #000000;
 }
 
 .c-head {
-    color: #FF6347;
+    color: #DAA520;
+}
+
+.p-tag {
+    color: #ffffff;
 }
 
 .c-btn {
     color: #000000;
-    background-color: #0288D1;
+    background-color: #808080;
     padding: 8px;
     text-decoration: none;
     border-radius: 8px;
@@ -122,5 +139,31 @@ header {
 }
 
 .c-btn:hover {
-    background-color: #FF6347;
+    background-color: #DAA520;
+}
+
+#about-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    background-color: #000000;
+  }
+
+.abt-img {
+    max-height: 80vh; 
+    object-fit: cover; 
+    width: 100%; 
+}
+
+.abt-head {
+    color: #DAA520;
+}
+
+.abt-brand {
+    color: #ffffff;
+}
+
+.abt-brand strong {
+    color: #DAA520;
 }
