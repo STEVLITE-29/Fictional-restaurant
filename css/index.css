@@ -167,3 +167,22 @@ header {
 .abt-brand strong {
     color: #DAA520;
 }
+
+#contact-section {
+    color:#ffffff;
+    display: flex;
+}
+
+.row-single-form {
+    box-shadow: 0 2px 20px -5px rgb(255, 255, 255);
+}
+
+.left {
+    background-color: #808080;
+    padding: 100px 90px;
+}
+
+.right {
+    padding: 39px 100px;
+    background-color: #ffffff;
+}
